@@ -7,6 +7,7 @@ sudo cp /home/$USER/.config/secureSSH/sshd_config /etc/ssh/sshd_config
 
 #Create ssh-user group
 sudo groupadd ssh-user
+sudo usermod -aG ssh-user $USER
 
 # If added diffie-hellman-group-exchange-sha256 to KexAlgorithms
 # Generate Moduli
